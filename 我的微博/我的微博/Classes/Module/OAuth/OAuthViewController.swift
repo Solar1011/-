@@ -62,6 +62,7 @@ class OAuthViewController: UIViewController, UIWebViewDelegate {
             // 从 query 中截取授权码
             let code = (query as NSString).substringFromIndex(5)
             print("获取授权码" + code)
+            print("123")
             // TODO: 换取 TOKEN
             loadAccessToken(code)
         } else {
